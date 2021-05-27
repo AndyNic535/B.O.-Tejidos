@@ -1,43 +1,1122 @@
+<!------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------->
+
+ <!-- COMIENZA LA PAGINA -->
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<!------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------->
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <!-- ENCAVEZADO DE LA PAGINA -->
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------->
+
+    <!-- LINKS DE ESTILOS -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+
+<!------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------->
+
+    <!-- ICONO DE LA PAGINA -->
+
+    <link rel="icon" type="image/x-icon" href="./img/logo.jpeg">
+
+<!------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------->
+
+    <!-- SCRIPTS PARA EL FUNCIONAMIENTO DEL BUSCADOR -->
+
+    <script src="./js/jquery.js"></script>
+    <script src="./js/jquery.dataTables.min.js"></script>
+
+<!------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------->
+
+    <!-- TITULO DE LA PAGINA -->
+
+    <title>B.O. Tejidos</title>
+
+</head>
+
+<!------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------->
+
+    <!-- PANTALLA DE CARGA -->
+
+<body id="inicio">
+
+    <div class='preloader'>
+        <div class='loader'>
+        </div>
+    </div>
+
+<!------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------->
+
+    <!-- BUSCADOR DE PRODUCTOS -->
+
+    <header class="navbar">
+
+        <div class="envase">
+            <div class="fila full-screen">
+                <div class="Buscar">
+                    <input type="search" id='input-search' placeholder="Buscar tu producto aqui....">
+                </div>
+                <div class="content-search">
+                    <div class="content-table">
+                        <table id="table">
+                            <thead>
+                                <tr>
+                                    <td></td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="./complementos/html/tejidos.html">Tejidos</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="./complementos/html/accesorios.html">Accesorios</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Productos</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Chalecos</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="./complementos/html/palillos.html">Palillos</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="./complementos/html/crochet.html">Crochet</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="./complementos/html/lanas.html">Lanas</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Lanas Cisne</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Lanas Ukril</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Lanas Reginela</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Lanas Revesderecho</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Lanas Modista</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Lanas Lanabel</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Lanas Faisan</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="./complementos/html/hilos.html">Hilos</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Hilos Cisne</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Hilos Ukril</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Hilos Reginela</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Hilos Revesderecho</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Hilos Modista</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Hilos Lanabel</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Hilos Faisan</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+<!------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------->
+
+                <div class="contactos">
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-whatsapp"></i></a>
+                    <a href=""><i class="fab far fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+<!------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------->
+
+    <!-- LOGO DE LA PAGINA  -->
+
+        <div class="logo">
+            <img src="./img/WhatsApp Image 2021-05-13 at 22.47.48.jpeg" alt="">
+        </div>
+
+<!------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------->
+
+    <!-- BARRA DE NAVEGACION -->
+
+        <div class="listado">
+            <ul>
+                <li><a href="#inicio" class="activo"><span>Inicio</span></a></li>
+                <li><a href="#tejidos">Tejidos</a></li>
+                <li><a href="#lanas">Lanas</a></li>
+                <li><a href="#hilos">Hilos</a></li>
+                <li><a href="#palillos">Palillos</a></li>
+                <li><a href="#crochet">Crochet</a></li>
+                <li><a href="#accesorios">Accesorios de tejidos</a></li>
+                <li><a href="#varios">Varios</a></li>
+            </ul>
+        </div>
+
+<!------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------->
+
+    <!-- CARRUSEL DE IMAGENES -->
+
+        <div class="content-all">
+            <div class="content-carrousel">
+                <figure><img src="./img/imagen1.jpg"></img></figure>
+                <figure><img src="./img/imagen2.jpg"></img></figure>
+                <figure><img src="./img/carrusel1.jpg"></img></figure>
+                <figure><img src="./img/imagen4.jpeg"></img></figure>
+                <figure><img src="./img/carrusel.jpg"></img></figure>
+                <figure><img src="./img/imagen6.jpeg"></img></figure>
+                <figure><img src="./img/imagen7.jpeg"></img></figure>
+                <figure><img src="./img/imagen8.jpeg"></img></figure>
+                <figure><img src="./img/imagen9.jpeg"></img></figure>
+                <figure><img src="./img/imagen10.jpeg"></img></figure>
+            </div>
+        </div>
+
+<!------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------->
+
+    <!-- SECTOR TEJIDOS -->
+
+        <section class="tejidos">
+            <div class="envase">
+                <div class="fila">
+                    <div class="titulo">
+                            <h2 id="tejidos">≋ Tejidos ≋</h2>
+                            <div class="btn">
+                                <button type="submit"><a href="./complementos/html/tejidos.html"> Ver Catalogo Completo ⮕ </a></button>
+                            </div>
+                    <div class="galerias">
+                        <div class="items">
+                            <div class="iner">
+                                <div class="caja">
+                                    <img src="./img/chaleco.jpg" alt="">
+                                </div>
+                                <div class="descripcion">
+                                    <h4>Chaleco</h4>
+                                    <ul>
+                                        <li>Talla: XXL</li>
+                                        <li>Color: Blanco Invierno</li>
+                                        <li>Precio: $25.000</li>
+                                    </ul>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="items">
+                            <div class="iner">
+                                <div class="caja">
+                                    <img src="./img/gorro1.jpg" alt="">
+                                </div>
+                                <div class="descripcion">
+                                    <h4>Gorro</h4>
+                                    <ul>
+                                        <li>Talla: L</li>
+                                        <li>Color: Verde y Gris</li>
+                                        <li>Precio: $15.000</li>
+                                    </ul>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="items">
+                            <div class="iner">
+                                <div class="caja">
+                                    <img src="./img/cuello.jpg" alt="">
+                                </div>
+                                <div class="descripcion">
+                                    <h4>Cuello</h4>
+                                    <ul>
+                                        <li>Talla: XL</li>
+                                        <li>Color: Rojo</li>
+                                        <li>Precio: $18.000</li>
+                                    </ul>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="items">
+                            <div class="iner">
+                                <div class="caja">
+                                    <img src="./img/bufanda.jpg" alt="">
+                                </div>
+                                <div class="descripcion">
+                                    <h4>Bufanda</h4>
+                                    <ul>
+                                        <li>Talla: M</li>
+                                        <li>Color: Colores Mixtos</li>
+                                        <li>Precio: $12.000</li>
+                                    </ul>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="items">
+                            <div class="iner">
+                                <div class="caja">
+                                    <img src="./img/guantes1.jpg" alt="">
+                                </div>
+                                <div class="descripcion">
+                                    <h4>Guantes</h4>
+                                    <ul>
+                                        <li>Talla: L</li>
+                                        <li>Color: Verde</li>
+                                        <li>Precio: $8.000</li>
+                                    </ul>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="items">
+                            <div class="iner">
+                                <div class="caja">
+                                    <img src="./img/calcetines.jpg" alt="">
+                                </div>
+                                <div class="descripcion">
+                                    <h4>Calcetines</h4>
+                                    <ul>
+                                        <li>Talla: S</li>
+                                        <li>Color: Rosa</li>
+                                        <li>Precio: $5.000</li>
+                                    </ul>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------->
+
+    <!-- SECTOR LANAS -->
+
+        <section class="lanas">
+            <div class="envase">
+                <div class="fila">
+                    <div class="titulo">
+                        <h2  id="lanas">≋ Lanas ≋</h2>
+                        <div class="btn">
+                            <button type="submit"><a href="./complementos/html/lanas.html"> Ver Catalogo Completo ⮕ </a></button>
+                        </div>
+                    </div>
+                    <div class="galerias">
+                        <div class="items">
+                            <div class="iner">
+                                <div class="caja">
+                                    <img src="./img/lanacisne.jpg" alt="">
+                                </div>
+                                <div class="descripcion">
+                                    <h4>Lanas Cisne</h4>
+                                    <ul>
+                                        <li>Marca: Cisne</li>
+                                        <li>Color: Blanco Invierno</li>
+                                        <li>Precio: $2.000</li>
+                                    </ul>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="items">
+                            <div class="iner">
+                                <div class="caja">
+                                    <img src="./img/lana reginella1.jpeg" alt="">
+                                </div>
+                                <div class="descripcion">
+                                    <h4>Lanas Reginella</h4>
+                                    <ul>
+                                        <li>Marca: Reginella</li>
+                                        <li>Color: Verde y Gris</li>
+                                        <li>Precio: $1.500</li>
+                                    </ul>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="items">
+                            <div class="iner">
+                                <div class="caja">
+                                    <img src="./img/lanareves.jpg" alt="">
+                                </div>
+                                <div class="descripcion">
+                                    <h4>Lanas Revesderecho</h4>
+                                    <ul>
+                                        <li>Marca: Revesderecho</li>
+                                        <li>Color: Rojo</li>
+                                        <li>Precio: $1.000</li>
+                                    </ul>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="items">
+                            <div class="iner">
+                                <div class="caja">
+                                    <img src="./img/lanamodista.jpeg" alt="">
+                                </div>
+                                <div class="descripcion">
+                                    <h4>Lanas Modista</h4>
+                                    <ul>
+                                        <li>Marca: Modista</li>
+                                        <li>Color: Colores Mixtos</li>
+                                        <li>Precio: $1.750</li>
+                                    </ul>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="items">
+                            <div class="iner">
+                                <div class="caja">
+                                    <img src="./img/lanalanavel.jpeg" alt="">
+                                </div>
+                                <div class="descripcion">
+                                    <h4>lanas Lanavel</h4>
+                                    <ul>
+                                        <li>Marca: Lanavel</li>
+                                        <li>Color: Verde</li>
+                                        <li>Precio: $2.000</li>
+                                    </ul>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="items">
+                            <div class="iner">
+                                <div class="caja">
+                                    <img src="./img/lanafaisan.jpg" alt="">
+                                </div>
+                                <div class="descripcion">
+                                    <h4>Lanas Faisan</h4>
+                                    <ul>
+                                        <li>Marca: Faisan</li>
+                                        <li>Color: Rosa</li>
+                                        <li>Precio: $1.300</li>
+                                    </ul>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------->
+
+    <!-- SECTOR HILOS -->
+
+        <section class="lanas">
+            <div class="envase">
+                <div class="fila">
+                    <div class="titulo">
+                            <h2 id="hilos">≋ Hilos ≋</h2>
+                            <div class="btn">
+                                <button type="submit"><a href="./complementos/html/hilos.html"> Ver Catalogo Completo ⮕ </a></button>
+                            </div>
+                    </div>
+                    <div class="galerias">
+                        <div class="items">
+                            <div class="iner">
+                                <div class="caja">
+                                    <img src="./img/hiloscisne.jpg" alt="">
+                                </div>
+                                <div class="descripcion">
+                                    <h4>Hilos Cisne</h4>
+                                    <ul>
+                                        <li>Marca: Cisne</li>
+                                        <li>Color: Blanco Invierno</li>
+                                        <li>Precio: $2.000</li>
+                                    </ul>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="items">
+                            <div class="iner">
+                                <div class="caja">
+                                    <img src="./img/hilosreginlla.jpeg" alt="">
+                                </div>
+                                <div class="descripcion">
+                                    <h4>Hilos Reginella</h4>
+                                    <ul>
+                                        <li>Marca: Reginella</li>
+                                        <li>Color: Verde y Gris</li>
+                                        <li>Precio: $1.500</li>
+                                    </ul>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="items">
+                            <div class="iner">
+                                <div class="caja">
+                            <img src="./img/hilosreves.jpeg" alt="">
+                                </div>
+                                <div class="descripcion">
+                                    <h4>Hilos Revesderecho</h4>
+                                    <ul>
+                                        <li>Marca: Revesderecho</li>
+                                        <li>Color: Rojo</li>
+                                        <li>Precio: $1.000</li>
+                                    </ul>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="items">
+                            <div class="iner">
+                                <div class="caja">
+                                    <img src="./img/hilosmodista.jpeg" alt="">
+                                </div>
+                                <div class="descripcion">
+                                    <h4>Hilos Modista</h4>
+                                    <ul>
+                                        <li>Marca: Modista</li>
+                                        <li>Color: Colores Mixtos</li>
+                                        <li>Precio: $1.750</li>
+                                    </ul>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="items">
+                            <div class="iner">
+                                <div class="caja">
+                                    <img src="./img/hiloslanavel.jpg" alt="">
+                                </div>
+                                <div class="descripcion">
+                                    <h4>Hilos Lanavel</h4>
+                                    <ul>
+                                        <li>Marca: Lanavel</li>
+                                        <li>Color: Verde</li>
+                                        <li>Precio: $2.000</li>
+                                    </ul>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="items">
+                            <div class="iner">
+                                <div class="caja">
+                                    <img src="./img/hilosfaisan.jpeg" alt="">
+                                </div>
+                                <div class="descripcion">
+                                    <h4>Hilos Faisan</h4>
+                                    <ul>
+                                        <li>Marca: Faisan</li>
+                                        <li>Color: Rosa</li>
+                                        <li>Precio: $1.300</li>
+                                    </ul>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------->
+
+    <!-- SECTOR PALILLOS -->
+
+        <section class="lanas">
+    <div class="envase">
+        <div class="fila">
+            <div class="titulo">
+                    <h2  id="palillos">≋ Palillos ≋</h2>
+                    <div class="btn">
+                        <button type="submit"><a href="./complementos/html/palillos.html"> Ver Catalogo Completo ⮕ </a></button>
+                    </div>
+            </div>
+            <div class="galerias">
+                <div class="items">
+                    <div class="iner">
+                        <div class="caja">
+                            <img src="./img/palillocircular.jpg" alt="">
+                        </div>
+                        <div class="descripcion">
+                            <h4>Palillo Circular Bambu</h4>
+                            <ul>
+                                <li>Numero: 2</li>
+                                <li>Tamaño: 20cm</li>
+                                <li>Grosor: 2,3cm</li>
+                                <li>Precio: $2.000</li>
+                            </ul>
+                        </div>
+                    </div>    
+                </div>
+                <div class="items">
+                    <div class="iner">
+                        <div class="caja">
+                            <img src="./img/palillosmetalicos.jpg" alt="">
+                        </div>
+                        <div class="descripcion">
+                            <h4>Palillo Plastico</h4>
+                            <ul>
+                                <li>Numero: 5</li>
+                                <li>Tamaño: 40cm</li>
+                                <li>Grosor: 1,5cm</li>
+                                <li>Precio: $1.500</li>
+                            </ul>
+                        </div>
+                    </div>    
+                </div>
+                <div class="items">
+                    <div class="iner">
+                        <div class="caja">
+                            <img src="./img/palillocircular.jpg" alt="">
+                        </div>
+                        <div class="descripcion">
+                            <h4>Palillo Circular Bambu</h4>
+                            <ul>
+                                <li>Numero: 2</li>
+                                <li>Tamaño: 20cm</li>
+                                <li>Grosor: 2,3cm</li>
+                                <li>Precio: $2.000</li>
+                            </ul>
+                        </div>
+                    </div>    
+                </div>
+                <div class="items">
+                    <div class="iner">
+                        <div class="caja">
+                            <img src="./img/palillocircular.jpg" alt="">
+                        </div>
+                        <div class="descripcion">
+                            <h4>Palillo Circular Bambu</h4>
+                            <ul>
+                                <li>Numero: 2</li>
+                                <li>Tamaño: 20cm</li>
+                                <li>Grosor: 2,3cm</li>
+                                <li>Precio: $2.000</li>
+                            </ul>
+                        </div>
+                    </div>    
+                </div>
+                <div class="items">
+                    <div class="iner">
+                        <div class="caja">
+                            <img src="./img/palillocircular.jpg" alt="">
+                        </div>
+                        <div class="descripcion">
+                            <h4>Palillo Circular Bambu</h4>
+                            <ul>
+                                <li>Numero: 2</li>
+                                <li>Tamaño: 20cm</li>
+                                <li>Grosor: 2,3cm</li>
+                                <li>Precio: $2.000</li>
+                            </ul>
+                        </div>
+                    </div>    
+                </div>
+                <div class="items">
+                    <div class="iner">
+                        <div class="caja">
+                            <img src="./img/palillocircular.jpg" alt="">
+                        </div>
+                        <div class="descripcion">
+                            <h4>Palillo Circular Bambu</h4>
+                            <ul>
+                                <li>Numero: 2</li>
+                                <li>Tamaño: 20cm</li>
+                                <li>Grosor: 2,3cm</li>
+                                <li>Precio: $2.000</li>
+                            </ul>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+        </section>
+
+<!------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------->
+
+    <!-- SECTOR CROCHETS -->
+
+        <section class="lanas">
+    <div class="envase">
+        <div class="fila">
+            <div class="titulo">
+                    <h2 id="crochet">≋ Crochet ≋</h2>
+                    <div class="btn">
+                        <button type="submit"><a href="./complementos/html/crochet.html"> Ver Catalogo Completo ⮕ </a></button>
+                    </div>
+            </div>
+            <div class="galerias">
+                <div class="items">
+                    <div class="iner">
+                        <div class="caja">
+                            <img src="./img/crochet.jpg" alt="">
+                        </div>
+                        <div class="descripcion">
+                            <h4>Crochet Metalico</h4>
+                            <ul>
+                                <li>Numero: 2</li>
+                                <li>Tamaño: 20cm</li>
+                                <li>Grosor: 2,3cm</li>
+                                <li>Precio: $2.000</li>
+                            </ul>
+                        </div>
+                    </div>    
+                </div>
+                <div class="items">
+                    <div class="iner">
+                        <div class="caja">
+                            <img src="./img/crochet.jpg" alt="">
+                        </div>
+                        <div class="descripcion">
+                            <h4>Crochet Metalico</h4>
+                            <ul>
+                                <li>Numero: 2</li>
+                                <li>Tamaño: 20cm</li>
+                                <li>Grosor: 2,3cm</li>
+                                <li>Precio: $2.000</li>
+                            </ul>
+                        </div>
+                    </div>    
+                </div>
+                <div class="items">
+                    <div class="iner">
+                        <div class="caja">
+                            <img src="./img/crochet.jpg" alt="">
+                        </div>
+                        <div class="descripcion">
+                            <h4>Crochet Metalico</h4>
+                            <ul>
+                                <li>Numero: 2</li>
+                                <li>Tamaño: 20cm</li>
+                                <li>Grosor: 2,3cm</li>
+                                <li>Precio: $2.000</li>
+                            </ul>
+                        </div>
+                    </div>    
+                </div>
+                <div class="items">
+                    <div class="iner">
+                        <div class="caja">
+                            <img src="./img/crochet.jpg" alt="">
+                        </div>
+                        <div class="descripcion">
+                            <h4>Crochet Metalico</h4>
+                            <ul>
+                                <li>Numero: 2</li>
+                                <li>Tamaño: 20cm</li>
+                                <li>Grosor: 2,3cm</li>
+                                <li>Precio: $2.000</li>
+                            </ul>
+                        </div>
+                    </div>    
+                </div>
+                <div class="items">
+                    <div class="iner">
+                        <div class="caja">
+                            <img src="./img/crochet.jpg" alt="">
+                        </div>
+                        <div class="descripcion">
+                            <h4>Crochet Metalico</h4>
+                            <ul>
+                                <li>Numero: 2</li>
+                                <li>Tamaño: 20cm</li>
+                                <li>Grosor: 2,3cm</li>
+                                <li>Precio: $2.000</li>
+                            </ul>
+                        </div>
+                    </div>    
+                </div>
+                <div class="items">
+                    <div class="iner">
+                        <div class="caja">
+                            <img src="./img/crochet.jpg" alt="">
+                        </div>
+                        <div class="descripcion">
+                            <h4>Crochet Metalico</h4>
+                            <ul>
+                                <li>Numero: 2</li>
+                                <li>Tamaño: 20cm</li>
+                                <li>Grosor: 2,3cm</li>
+                                <li>Precio: $2.000</li>
+                            </ul>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+        </section>
+
+<!------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------->
+
+    <!-- SECTOR ACCESORIOS DE TEJIDOS -->
+
+        <section class="lanas">
+    <div class="envase">
+        <div class="fila">
+            <div class="titulo">
+                    <h2  id="accesorios">≋ Accesorios de Tejidos ≋</h2>
+                    <div class="btn">
+                        <button type="submit"><a href="./complementos/html/accesorios.html"> Ver Catalogo Completo ⮕ </a></button>
+                    </div>
+            </div>
+            <div class="galerias">
+                <div class="items">
+                    <div class="iner">
+                        <div class="caja">
+                            <img src="./img/botones.jpg" alt="">
+                        </div>
+                        <div class="descripcion">
+                            <h4>Botones</h4>
+                            <ul>
+                                <li>Tamaño: 3cm</li>
+                                <li>Cantidad: 50 por bolsa</li>
+                                <li>Precio: $2.000</li>
+                            </ul>
+                        </div>
+                    </div>    
+                </div>
+                <div class="items">
+                    <div class="iner">
+                        <div class="caja">
+                            <img src="./img/botones.jpg" alt="">
+                        </div>
+                        <div class="descripcion">
+                            <h4>Botones</h4>
+                            <ul>
+                                <li>Tamaño: 3cm</li>
+                                <li>Cantidad: 50 por bolsa</li>
+                                <li>Precio: $2.000</li>
+                            </ul>
+                        </div>
+                    </div>    
+                </div>
+                <div class="items">
+                    <div class="iner">
+                        <div class="caja">
+                            <img src="./img/botones.jpg" alt="">
+                        </div>
+                        <div class="descripcion">
+                            <h4>Botones</h4>
+                            <ul>
+                                <li>Tamaño: 3cm</li>
+                                <li>Cantidad: 50 por bolsa</li>
+                                <li>Precio: $2.000</li>
+                            </ul>
+                        </div>
+                    </div>    
+                </div>
+                <div class="items">
+                    <div class="iner">
+                        <div class="caja">
+                            <img src="./img/botones.jpg" alt="">
+                        </div>
+                        <div class="descripcion">
+                            <h4>Botones</h4>
+                            <ul>
+                                <li>Tamaño: 3cm</li>
+                                <li>Cantidad: 50 por bolsa</li>
+                                <li>Precio: $2.000</li>
+                            </ul>
+                        </div>
+                    </div>    
+                </div>
+                <div class="items">
+                    <div class="iner">
+                        <div class="caja">
+                            <img src="./img/botones.jpg" alt="">
+                        </div>
+                        <div class="descripcion">
+                            <h4>Botones</h4>
+                            <ul>
+                                <li>Tamaño: 3cm</li>
+                                <li>Cantidad: 50 por bolsa</li>
+                                <li>Precio: $2.000</li>
+                            </ul>
+                        </div>
+                    </div>    
+                </div>
+                <div class="items">
+                    <div class="iner">
+                        <div class="caja">
+                            <img src="./img/botones.jpg" alt="">
+                        </div>
+                        <div class="descripcion">
+                            <h4>Botones</h4>
+                            <ul>
+                                <li>Tamaño: 3cm</li>
+                                <li>Cantidad: 50 por bolsa</li>
+                                <li>Precio: $2.000</li>
+                            </ul>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+        </section>
+
+<!------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------->
+
+    <!-- SECTOR VARIOS -->
+
+        <section class="lanas">
+    <div class="envase">
+        <div class="fila">
+            <div class="titulo">
+                    <h2  id="varios">≋ Varios ≋</h2>
+                    <div class="btn">
+                        <button type="submit"><a href="./complementos/html/varios.html"> Ver Catalogo Completo ⮕ </a></button>
+                    </div>
+            </div>
+            <div class="galerias">
+                <div class="items">
+                    <div class="iner">
+                        <div class="caja">
+                            <img src="./img/chaqueta.jpg" alt="">
+                        </div>
+                        <div class="descripcion">
+                            <h4>Chaquetas</h4>
+                            <ul>
+                                <li>Talla: XXL</li>
+                                <li>Color: Rojo</li>
+                                <li>Precio: $25.000</li>
+                            </ul>
+                        </div>
+                    </div>    
+                </div>
+                <div class="items">
+                    <div class="iner">
+                        <div class="caja">
+                            <img src="./img/chaqueta.jpg" alt="">
+                        </div>
+                        <div class="descripcion">
+                            <h4>Chaquetas</h4>
+                            <ul>
+                                <li>Talla: XXL</li>
+                                <li>Color: Rojo</li>
+                                <li>Precio: $25.000</li>
+                            </ul>
+                        </div>
+                    </div>    
+                </div>
+                <div class="items">
+                    <div class="iner">
+                        <div class="caja">
+                            <img src="./img/chaqueta.jpg" alt="">
+                        </div>
+                        <div class="descripcion">
+                            <h4>Chaquetas</h4>
+                            <ul>
+                                <li>Talla: XXL</li>
+                                <li>Color: Rojo</li>
+                                <li>Precio: $25.000</li>
+                            </ul>
+                        </div>
+                    </div>    
+                </div>
+                <div class="items">
+                    <div class="iner">
+                        <div class="caja">
+                            <img src="./img/chaqueta.jpg" alt="">
+                        </div>
+                        <div class="descripcion">
+                            <h4>Chaquetas</h4>
+                            <ul>
+                                <li>Talla: XXL</li>
+                                <li>Color: Rojo</li>
+                                <li>Precio: $25.000</li>
+                            </ul>
+                        </div>
+                    </div>    
+                </div>
+                <div class="items">
+                    <div class="iner">
+                        <div class="caja">
+                            <img src="./img/chaqueta.jpg" alt="">
+                        </div>
+                        <div class="descripcion">
+                            <h4>Chaquetas</h4>
+                            <ul>
+                                <li>Talla: XXL</li>
+                                <li>Color: Rojo</li>
+                                <li>Precio: $25.000</li>
+                            </ul>
+                        </div>
+                    </div>    
+                </div>
+                <div class="items">
+                    <div class="iner">
+                        <div class="caja">
+                            <img src="./img/chaqueta.jpg" alt="">
+                        </div>
+                        <div class="descripcion">
+                            <h4>Chaquetas</h4>
+                            <ul>
+                                <li>Talla: XXL</li>
+                                <li>Color: Rojo</li>
+                                <li>Precio: $25.000</li>
+                            </ul>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+        </section>
+
+<!------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------->
+
+    <!-- BOTONES DE SUBIR Y HACER PEDIDO -->
+
+        <footer class="footer1">
+            <div class="caja1">
+                <div class="boton">
+                    <a href="#inicio"><i class="fas fa-arrow-up"></i></a>
+                </div>
+                <div class="btn-pedido">
+                    <a href=""><button type="button" href="#inicio">Haz Tu Pedido Aqui</button> </a>                  </div>
+          </footer>
+
+<!------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------->
+
+    <!-- FOOTER DE LA PAGINA -->
+
+        <div id="footer">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="titulo">
+                        <h1>Mas informacion</h1>
+                    </div>
+                    <div class="texto">
+                        <p>
+                            Esta compañia se dedica a la aventa de software integro 
+                            con un conjunto de cosas que no se lo que estoy escribiendo, 
+                            este texto es solo para llenar informacion en el cuadro de la 
+                            compañia.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="titulo">
+                        <h1>Redes Sociales</h1>
+                    </div>
+                    <div class="redes-sociales">
+                        <div class="pilar">
+                            <i class="fab fa-facebook"></i>
+                            <p>Siguenos en Facebook</p>
+                        </div>
+                        <div class="pilar">
+                            <i class="fab fa-instagram"></i>
+                            <p>Siguenos en Instagram</p>
+                        </div>
+                        <div class="pilar">
+                            <i class="fab fa-whatsapp"></i>
+                            <p>Escribenos al WhatsApp</p>
+                        </div>
+                        <div class="pilar">
+                            <i class="fab far fa-envelope"></i>
+                            <p>Escribenos al Gmail</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="titulo">
+                        <h1>Contactos</h1>
+                    </div>
+                        <div class="redes-sociales">
+                            <div class="pilar">
+                                <i class="fas fa-home"></i>
+                                <p>
+                                    Santiago
+                                    <br>
+                                    Comuna de Punte Alto
+                                    <br> 
+                                    Enrique Faverio
+                                    <br> 
+                                    Casa: #781
+                                </p>
+                            </div>
+                            <div class="pilar">
+                                <i class="fas fa-mobile-alt"></i>
+                                <p> +569-9313-9457</p>
+                            </div>
+                            <div class="pilar">
+                                <i class="far fa-envelope"></i>
+                                <p>AndyNic.summoners.
+                                   <br> 
+                                   war@gmail.com</p>
+                                   <br>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="pie-footer">
+            <div class="contenido">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="titulo-footer">
+                            &copy; 2021 Todo los Derechos Reservados | <a href="">B.O. Tejidos</a>
+                        </p>
+                        <p class="span-titulo">
+                            <a href="">Informacion Compañia</a> | <a href="">Privacidad y Politica</a> | <a href="">Terminos y Condiciones</a> 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------->
+
+    <!-- SCRIPTS DEL BUSCADOR Y LA CARGA DE LA PAGINA -->
+
+    <script src="./js/pre-loader.js"></script>
+    <script src="./js/search.js"></script>
+
+<!------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------->
+
+    <!-- FINALIZA LA PAGINA -->
+
+</body>
+
 </html>
+
+<!------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------->
